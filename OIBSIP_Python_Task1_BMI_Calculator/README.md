@@ -75,6 +75,18 @@ Health Tip: Great! Keep maintaining your healthy lifestyle.
 
 Ideal Weight Range: 47.36 kg - 63.74 kg
 
+## Output Screenshots
+
+
+### BMI Calculation
+
+![BMI Result](screenshottt1.png)
+
+### Invalid Input
+
+![Invalid Input](screenshottt2.png)
+
+
 
 
 ## Project Structure
