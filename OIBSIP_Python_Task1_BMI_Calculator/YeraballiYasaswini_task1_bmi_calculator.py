@@ -366,7 +366,7 @@ def save_data(name, gender, weight, height, bmi, category):
 
 root = tk.Tk()
 root.title("BMI Health Calculator")
-root.geometry("550x700")
+root.geometry("550x680")
 root.resizable(False, False)
 root.configure(bg="#F8E8FF")
 
