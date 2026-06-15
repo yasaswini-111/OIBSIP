@@ -1,109 +1,144 @@
-# BMI Health Calculator
+# OIBSIP_Python_Task1_BMI_Calculator
 
-## Project Description
+##  Project Overview
 
-The **BMI Health Calculator** is a Python command-line application developed to calculate a user's **Body Mass Index (BMI)** using their weight and height.
+The BMI Health Calculator is a Python GUI application developed using Tkinter. It helps users calculate their Body Mass Index (BMI), determine their health category, and receive health suggestions based on the calculated BMI.
 
-The application classifies the BMI into different health categories, provides a personalized health tip, displays the ideal weight range, validates user input, and allows users to perform multiple BMI calculations without restarting the program.
+The application also stores user records in a JSON file, displays previous BMI records, provides statistical analysis, and visualizes BMI data using graphs.
 
----
+
 
 ## Features
 
-* User name input
-* Weight input (in kilograms)
-* Height input (in meters)
-* Accurate BMI calculation
-* BMI category classification
-* Personalized health recommendations
-* Ideal weight range calculation
-* Input validation for incorrect values
-* Multiple calculations in a single execution
+- User-friendly Tkinter GUI
+- BMI calculation using weight and height
+- BMI category classification
+- Health tips based on BMI
+- Ideal weight calculation
+- Health score display
+- Name and gender input
+- Input validation and error handling
+- Save user data in JSON format
+- View BMI history
+- Display BMI statistics
+- BMI trend graph using Matplotlib
+- Clear and Exit options
 
----
+
 
 ## Technologies Used
 
-* Python 3
-* Command Line Interface (CLI)
-
-
-## BMI Formula
-
-**BMI = Weight (kg) / Height² (m²)**
-
-
-
-## BMI Categories
-
-| BMI Range      | Category      |
-| -------------- | ------------- |
-| Less than 18.5 | Underweight   |
-| 18.5 – 24.9    | Normal Weight |
-| 25 – 29.9      | Overweight    |
-| 30 and Above   | Obese         |
-
-
-
-## How to Run the Project
-
-1. Open the project folder in VS Code.
-2. Run the python file 
-3. Enter your name, weight, and height.
-4. View the BMI report.
-5. Choose whether to calculate again or exit.
-
-
-
-## Sample Test Case
-
-### Input
-
-Name: Yasaswini
-
-Weight: 55
-
-Height: 1.60
-
-### Output
-
-BMI: 21.48
-
-Category: Normal Weight
-
-Health Tip: Great! Keep maintaining your healthy lifestyle.
-
-Ideal Weight Range: 47.36 kg - 63.74 kg
-
-## Output Screenshots
-
-
-### BMI Calculation
-
-![BMI Result](screenshottt1.png)
-
-### Invalid Input
-
-![Invalid Input](screenshottt2.png)
-
+- Python
+- Tkinter
+- JSON
+- Matplotlib
+- Datetime
+- OS Module
 
 
 
 ## Project Structure
 
-BMI_Calculator
-│
-├── YeraballiYasaswini_task1_bmi_Calculator.py
-├── README.md
-└── screenshot.png
 
+OIBSIP_Python_Task1_BMI_Calculator
+│
+├── YeraballiYasaswini_task1_bmi_calculator.py
+├── bmi_data.json
+├── README.md
+├── Screenshot1.png
+├── Screenshot2.png
+├── Screenshot3.png
+├── Screenshot4.png
+└── Screenshot5.png
+
+
+
+## How to Run
+
+1. Install Python 3.x
+2. Install Matplotlib
+
+
+pip install matplotlib
+
+
+3. Run the project
+python YeraballiYasaswini_task1_bmi_calculator.py
+
+
+
+
+## How It Works
+
+1. Enter your name.
+2. Select gender.
+3. Enter weight (kg).
+4. Enter height (m).
+5. Click **Calculate**.
+6. View:
+   - BMI
+   - Health Category
+   - Health Tip
+   - Ideal Weight
+   - Health Score
+7. Save records automatically.
+8. Use:
+   - History
+   - Statistics
+   - Graph
+   buttons to view stored data.
+
+
+
+## Validation
+
+- Name accepts only alphabets.
+- Weight must be greater than zero.
+- Height must be greater than zero.
+- Invalid inputs are handled using message boxes.
+
+
+
+## Output
+
+The application displays:
+
+- BMI
+- BMI Category
+- Health Tip
+- Ideal Weight
+- Health Score
+
+It also stores every calculation inside **bmi_data.json**.
+
+## Screenshots
+
+### Main Window
+
+![Main Window](Screenshot1.png)
+
+### BMI result
+
+![result](Screenshot2.png)
+
+### Statistics
+
+![Statistics](Screenshot3.png)
+
+### BMI Graph
+
+![Graph](Screenshot4.png)
+
+### inavlid input
+
+![invalid](Screenshot5.png)
 
 ## Future Enhancements
 
-* Develop a GUI version using Tkinter.
-* Store previous BMI records.
-* Display graphical BMI reports.
-* Add age and gender-based health suggestions.
-
-
+- Export reports as PDF
+- Search previous records
+- Delete history
+- Edit existing records
+- Pie chart visualization
+- User login system
 
